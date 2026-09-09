@@ -1,0 +1,27 @@
+name: Mecca Database | CD | Staging
+
+on:
+  push:
+    branches: [ "staging" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: executing remote ssh commands using key
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            cd /root/app/mecca/Mecca-Database
+            git reset --hard HEAD
+            git pull
+            git switch staging
+            git pull origin staging
+            npm i
+            npm run db:migrate -- --env staging
