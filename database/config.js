@@ -1,30 +1,28 @@
 require('dotenv').config();
 
-const dbName = process.env.DB_DATABASE || 'projectt';
-
 module.exports = {
   development: {
-    dialect: process.env.DB_DIALECT || 'mysql',
-    username: process.env.DB_USERNAME || 'root',
-    password: process.env.DB_PASSWORD || null,
-    database: dbName,
-    host: process.env.DB_HOST || '127.0.0.1',
-    port: process.env.DB_PORT || 3306
+    dialect: process.env.DB_DIALECT,
+    username: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE + "_" + process.env.NODE_ENV,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT
   },
   staging: {
-    dialect: process.env.DB_DIALECT || 'mysql',
-    username: process.env.DB_USERNAME || 'root',
-    password: process.env.DB_PASSWORD || null,
-    database: dbName,
-    host: process.env.DB_HOST || '127.0.0.1',
-    port: process.env.DB_PORT || 3306
+    dialect: process.env.DB_DIALECT,
+    username: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE + "_" + process.env.NODE_ENV,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT
   },
   production: {
-    dialect: process.env.DB_DIALECT || 'mysql',
-    username: process.env.DB_USERNAME || 'root',
-    password: process.env.DB_PASSWORD || null,
-    database: dbName,
-    host: process.env.DB_HOST || '127.0.0.1',
-    port: process.env.DB_PORT || 3306
+    dialect: process.env.DB_DIALECT,
+    username: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE + "_" + process.env.NODE_ENV,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT
   }
 };
