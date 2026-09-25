@@ -16,7 +16,6 @@ module.exports = {
         phone: '+6281234567890',
         email: 'contact@loremipsum.com',
         address: 'Jl. Jenderal Sudirman No. 101, Jakarta Pusat',
-        payment_terms: 30,
         created_at: currentMonthStart,
         updated_at: now
       },
@@ -27,7 +26,6 @@ module.exports = {
         phone: '+6282121212112',
         email: 'johndoe@example.com',
         address: 'Jl. Gatot Subroto No. 45, Jakarta Selatan',
-        payment_terms: 14,
         created_at: currentMonthStart,
         updated_at: now
       },
@@ -38,7 +36,6 @@ module.exports = {
         phone: '+6281399887766',
         email: 'janedoe@example.com',
         address: 'Jl. MH Thamrin No. 88, Jakarta Pusat',
-        payment_terms: 30,
         created_at: currentMonthStart,
         updated_at: now
       },
@@ -49,7 +46,6 @@ module.exports = {
         phone: '+6285712345678',
         email: 'admin@loremsit.com',
         address: 'Kawasan Industri Pulogadung Blok A, Jakarta Timur',
-        payment_terms: 30,
         created_at: currentMonthStart,
         updated_at: now
       },
@@ -60,7 +56,6 @@ module.exports = {
         phone: '+6287899001122',
         email: 'info@foobar.co.id',
         address: 'Jl. HR Rasuna Said Kav. 12, Jakarta Selatan',
-        payment_terms: 30,
         created_at: currentMonthStart,
         updated_at: now
       },
@@ -71,7 +66,6 @@ module.exports = {
         phone: '+6281188223344',
         email: 'procurement@acme.co.id',
         address: 'Menara Mandiri Lt. 20, Jakarta Selatan',
-        payment_terms: 45,
         created_at: currentMonthStart,
         updated_at: now
       },
@@ -82,7 +76,6 @@ module.exports = {
         phone: '+6281299334455',
         email: 'finance@janedoe.com',
         address: 'Jl. Asia Afrika No. 10, Bandung',
-        payment_terms: 30,
         created_at: currentMonthStart,
         updated_at: now
       },
@@ -93,7 +86,6 @@ module.exports = {
         phone: '+6281355667788',
         email: 'dolorsit@example.com',
         address: 'Jl. Pemuda No. 50, Surabaya',
-        payment_terms: 14,
         created_at: currentMonthStart,
         updated_at: now
       },
@@ -104,7 +96,6 @@ module.exports = {
         phone: '+6281788990011',
         email: 'ipsum@perkasa.com',
         address: 'Jl. Malioboro No. 25, Yogyakarta',
-        payment_terms: 30,
         created_at: currentMonthStart,
         updated_at: now
       },
@@ -115,7 +106,6 @@ module.exports = {
         phone: '+6285211223344',
         email: 'logistics@johndoe.com',
         address: 'Jl. Pelabuhan Tanjung Priok No. 7, Jakarta Utara',
-        payment_terms: 60,
         created_at: currentMonthStart,
         updated_at: now
       }
@@ -150,7 +140,6 @@ module.exports = {
         phone: `+6281${String(10000000 + i)}`,
         email: `contact.cust${i}@example.com`,
         address: `Jl. Kawasan Industri Megah Blok D No. ${i % 50 + 1}`,
-        payment_terms: (i % 3 + 1) * 15,
         created_at: currentMonthStart,
         updated_at: now
       });

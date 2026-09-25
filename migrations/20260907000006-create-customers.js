@@ -35,11 +35,6 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: true
       },
-      payment_terms: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue: 30
-      },
       created_at: {
         type: Sequelize.DATE,
         allowNull: false,
