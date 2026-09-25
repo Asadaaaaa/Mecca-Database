@@ -52,7 +52,7 @@ module.exports = {
         id: 1,
         uuid: adminUuid,
         name: 'Administrator',
-        email: 'admin@mecca.com',
+        email: 'admin@mecca.co.id',
         username: 'admin',
         password: hashPassword('admin123', 'meccaSalt2026'),
         status: 'active',
